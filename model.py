@@ -158,7 +158,7 @@ def reshape(self, new_shape):
     # TODO: return a new LazyBuffer with the array reshaped to new_shape
     reshaped_data = self._np.reshape(new_shape)
     return LazyBuffer(reshaped_data)
-    lazyBuffer.reshape = reshape
+LazyBuffer.reshape = reshape
 
 # Step 11 - lazybuffer_expand
 def expand(self, new_shape):
